@@ -7,6 +7,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 1;
 
     box-shadow: 1px 1px 3px  rgba(0, 0, 0, 0.5);
 }
@@ -50,3 +51,82 @@ header .icons img {
     cursor: pointer;
 }
 /* /header */
+
+/* main */
+main .container {
+    width: 900px; 
+    margin: auto;
+    padding: 80px 0;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+main .card {
+    width:33%;
+}
+
+main .card-img img {
+    width: 100%
+}
+
+main .card-img{
+    position: relative;
+}
+
+main .card .card-img .img-secondary { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+main .card-img:hover .img-secondary {
+    display: inline;
+} 
+
+main .card .card-img .add-to-fav {
+    background-color: white;
+    font-size: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+main .card .card-img .card-discount {
+    background-color: #ff0000;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 4px 8px;
+
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+}
+
+main .card .card-text {
+    padding-bottom: 30px;
+}
+
+main .card .card-text .brand, .price{
+    font-size: 10px;
+}
+
+main .card .card-text .cloth-name{
+    font-size: 11px;
+    font-weight: bold;
+}
+
+main .card .card-text .price .discounted-price{
+    color: #ff0000;;
+    font-weight: bold;
+}
+
+main .card .card-text .price .original-price{
+    text-decoration: line-through;
+}

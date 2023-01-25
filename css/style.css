@@ -61,12 +61,12 @@ main .card {
     width:33%;
 }
 
-main .card-img img {
-    width: 100%
+main .card-img {
+    position: relative;
 }
 
-main .card-img{
-    position: relative;
+main .card-img img {
+    width: 100%
 }
 
 main .card .card-img .img-secondary { 
@@ -160,6 +160,12 @@ footer {
     padding: 20px 0;
 }
 
+footer .footer-left #boolando-srl {
+    font-size: 12px;
+    font-weight: bold;
+    padding-bottom: 8px;
+}
+
 footer .footer-left .links {
     display: flex;
     flex-flow: row wrap;
@@ -167,12 +173,6 @@ footer .footer-left .links {
     gap: 5px;
 
     font-size: 10px;
-}
-
-footer .footer-left #boolando-srl {
-    font-size: 12px;
-    font-weight: bold;
-    padding-bottom: 8px;
 }
 
 footer .footer-left .links .info-links {

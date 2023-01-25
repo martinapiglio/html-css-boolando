@@ -1,3 +1,13 @@
+.container {
+    width: 900px;
+    margin: auto;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
 /* header */
 header {
     background-color: #ff6900;
@@ -10,16 +20,6 @@ header {
     z-index: 1;
 
     box-shadow: 1px 1px 3px  rgba(0, 0, 0, 0.5);
-}
-
-header .container {
-    width: 900px;
-    margin: auto;
-
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
 }
 
 header #links ul {
@@ -54,14 +54,8 @@ header .icons img {
 
 /* main */
 main .container {
-    width: 900px; 
-    margin: auto;
-    padding: 80px 0;
-
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-}
+    padding: 80px 0 0;
+} 
 
 main .card {
     width:33%;
@@ -129,4 +123,51 @@ main .card .card-text .price .discounted-price{
 
 main .card .card-text .price .original-price{
     text-decoration: line-through;
+}
+/* /main */
+
+/* footer */
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 20px 0;
+}
+
+footer .footer-left .links {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    gap: 5px;
+
+    font-size: 10px;
+}
+
+footer .footer-left #boolando-srl {
+    font-size: 12px;
+    font-weight: bold;
+    padding-bottom: 8px;
+}
+
+footer .footer-left .links .info-links {
+    cursor: pointer;
+}
+
+footer .footer-left .links .info-links:hover {
+    text-decoration: underline;
+}
+
+
+footer .footer-right {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 5px;
+
+    font-size: 10px;
+    font-weight: bold;
+}
+
+footer .footer-right .icons-img img {
+    width: 1.5em;
+    cursor: pointer;
 }

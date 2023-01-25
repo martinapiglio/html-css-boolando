@@ -91,16 +91,43 @@ main .card .card-img .add-to-fav {
     right: 0;
 }
 
-main .card .card-img .card-discount {
+/* bonus -- heart hover color change */
+main .card .card-img .add-to-fav:hover {
+    color:#ff0000;
+}
+/* /bonus */
+
+main .card .card-img .card-label {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+
+    display: flex;
+    gap: 5px;
+}
+
+main .card .card-img .card-label #card-label-discount {
     background-color: #ff0000;
     color: white;
     font-size: 10px;
     font-weight: bold;
     padding: 4px 8px;
+}
 
-    position: absolute;
-    bottom: 40px;
-    left: 0;
+main .card .card-img .card-label #card-label-sustainability {
+    background-color: #008000;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 4px 8px;
+}
+
+main .card:nth-last-child(-n+2) #card-label-discount {
+    display: none;
+}
+
+main .no-sustainability #card-label-sustainability {
+    display: none;
 }
 
 main .card .card-text {
@@ -156,7 +183,6 @@ footer .footer-left .links .info-links:hover {
     text-decoration: underline;
 }
 
-
 footer .footer-right {
     display: flex;
     flex-flow: column wrap;
@@ -171,3 +197,4 @@ footer .footer-right .icons-img img {
     width: 1.5em;
     cursor: pointer;
 }
+/* /footer */

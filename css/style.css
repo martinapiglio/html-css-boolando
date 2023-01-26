@@ -106,7 +106,7 @@ main .card .card-img .card-label {
     gap: 5px;
 }
 
-main .card .card-img .card-label #card-label-discount {
+main .card .card-img .card-label .card-label-discount {
     background-color: #ff0000;
     color: white;
     font-size: 10px;
@@ -114,7 +114,7 @@ main .card .card-img .card-label #card-label-discount {
     padding: 4px 8px;
 }
 
-main .card .card-img .card-label #card-label-sustainability {
+main .card .card-img .card-label .card-label-sustainability {
     background-color: #008000;
     color: white;
     font-size: 10px;
@@ -122,11 +122,11 @@ main .card .card-img .card-label #card-label-sustainability {
     padding: 4px 8px;
 }
 
-main .card:nth-last-child(-n+2) #card-label-discount {
+main .card:nth-last-child(-n+2) .card-label-discount {
     display: none;
 }
 
-main .no-sustainability #card-label-sustainability {
+main .no-sustainability .card-label-sustainability {
     display: none;
 }
 
